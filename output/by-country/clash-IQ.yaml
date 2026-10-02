@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 63.141.128.22
+  server: port2.axiomed.ir
   port: 443
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
+  uuid: 1e534c59-85c2-4042-a407-e491f68cb3a5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  servername: kjz42cni3-krcuj2-gqs8ves15.fornewiran-1010.workers.dev
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /vl/Z8Ag5xQbwmhIHsvyDj3
     headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+      Host: kjz42cni3-krcuj2-gqs8ves15.fornewiran-1010.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
