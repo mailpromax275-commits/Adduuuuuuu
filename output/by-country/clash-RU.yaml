@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
+  server: inlay.merlano.monster
+  port: 443
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: inlay.merlano.monster
+  network: ws
+  ws-opts:
+    path: /api/de3/stream
+    headers:
+      Host: inlay.merlano.monster
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: vless
   server: 136.148.83.69
   port: 443
   uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
@@ -13,15 +27,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 168.113.253.178
-  port: 443
-  uuid: aea0ed55-4e5e-0001-a4fe-5d626d914a9f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
   server: 136.148.83.69
@@ -33,26 +38,19 @@ proxies:
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
-  server: 147.45.221.225
+  server: paperclip.filnex.baby
   port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nl.lucheeebezlimitnoekino.stream
+  servername: candlebark.gerqix.online
   network: ws
   ws-opts:
-    path: /media/ws/
+    path: /api/de3/stream
     headers:
-      Host: 147.45.221.225
+      Host: paperclip.filnex.baby
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: ss
-  server: 46.17.42.129
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: vless
   server: 136.148.83.69
   port: 443
@@ -61,15 +59,27 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: vless
-  server: 136.148.83.69
+  server: 95.129.236.117
   port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  uuid: 77998cc6-8a4d-4251-b974-ebff48a84c4d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: cdn.dash.gearmonster.org
+  network: ws
+  ws-opts:
+    path: /edge/node8/push
+    headers:
+      Host: cdn.dash.gearmonster.org
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  type: ss
+  server: 48.103.218.77
+  port: 18443
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   type: vless
   server: 136.148.83.69
@@ -80,12 +90,14 @@ proxies:
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  type: ss
-  server: 48.103.218.77
-  port: 18443
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   type: vless
   server: 147.45.175.81
@@ -97,7 +109,7 @@ proxies:
   servername: xsru2.freeddns.org
   network: ws
   ws-opts:
-    path: /wsru
+    path: wsru
     headers:
       Host: xsru2.freeddns.org
 proxy-groups:
